@@ -1,6 +1,6 @@
 # Revere Bots
 
-Customer teaser site for **Revere Bots** (formerly **Agnostic**).
+Customer teaser site for **Revere Bots**.
 
 Supervised robots pack online grocery orders in existing stores — pay per order, no CapEx.
 
