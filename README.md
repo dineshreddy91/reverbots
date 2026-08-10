@@ -2,7 +2,7 @@
 
 Customer teaser site for **Revere Bots**.
 
-Supervised robots pack online grocery orders in existing stores — pay per order, no CapEx.
+Supervised robots pack online grocery orders in existing stores. Pay per order, no CapEx.
 
 ## Local
 
