@@ -1,6 +1,6 @@
 # Revere Robotics
 
-Public teaser site for Revere's robotics solutions.
+Public teaser site.
 
 ## Local
 
