@@ -1,15 +1,17 @@
 # Revere Robotics
 
-Public teaser site.
+Static stealth landing page using the supplied white logo, CSS orbital and floating animations, and rotating cryptic transmissions. No build step or external dependencies.
 
-## Local
-
-Open `index.html` in a browser, or:
+## Local preview
 
 ```bash
-npx serve .
+python3 -m http.server 4173 --bind 127.0.0.1
 ```
+
+Open http://127.0.0.1:4173. The transmission button cycles messages; the pause button stops animation and automatic messages. Reduced-motion preferences disable animation and automatic rotation by default.
 
 ## Deploy
 
-Connect this repo in Vercel as a static site (root directory).
+Vercel serves the repository root as a static site. Push to the connected production branch to trigger its configured deployment.
+
+Public copy intentionally omits product details. Contact remains hello@reverebots.com.

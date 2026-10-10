@@ -1,164 +1,47 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>Revere Robotics</title>
-  <meta name="description" content="Revere Robotics builds supervised robots for grocery stores." />
-  <link rel="icon" href="favicon.svg" type="image/svg+xml" />
-  <style>
-    :root {
-      --bg: #F7F6F3;
-      --ink: #1A1A1A;
-      --muted: #5E5E5A;
-      --line: rgba(26, 26, 26, 0.12);
-    }
-    * { box-sizing: border-box; }
-    body {
-      margin: 0;
-      font-family: Georgia, "Times New Roman", serif;
-      color: var(--ink);
-      background: var(--bg);
-      line-height: 1.55;
-    }
-    a { color: inherit; }
-    .hero-bg {
-      position: fixed;
-      inset: 0;
-      z-index: 0;
-      background:
-        linear-gradient(180deg, rgba(247,246,243,0.62) 0%, rgba(247,246,243,0.88) 52%, var(--bg) 100%),
-        linear-gradient(90deg, rgba(247,246,243,0.94) 0%, rgba(247,246,243,0.45) 48%, rgba(247,246,243,0.22) 100%),
-        url("hero-aisle.jpg") right center / cover no-repeat;
-    }
-    .wrap {
-      position: relative;
-      z-index: 1;
-      max-width: 36rem;
-      margin: 0 auto;
-      padding: 3.5rem 1.5rem 4rem;
-    }
-    .mark {
-      display: inline-block;
-      width: 0.55rem;
-      height: 0.55rem;
-      border-radius: 50%;
-      background: #1F6B5C;
-      margin-right: 0.5rem;
-      vertical-align: middle;
-    }
-    .wordmark {
-      font-family: Helvetica, Arial, sans-serif;
-      font-size: 0.85rem;
-      font-weight: 600;
-      letter-spacing: 0.08em;
-      text-transform: uppercase;
-    }
-    h1 {
-      font-weight: 400;
-      font-size: 2.1rem;
-      line-height: 1.2;
-      margin: 2.5rem 0 1rem;
-    }
-    p { margin: 0 0 1rem; color: var(--muted); }
-    ul {
-      margin: 1.5rem 0 2rem;
-      padding: 0;
-      list-style: none;
-    }
-    li {
-      padding: 0.85rem 0;
-      border-top: 1px solid var(--line);
-      color: var(--muted);
-    }
-    li strong {
-      display: block;
-      color: var(--ink);
-      font-family: Helvetica, Arial, sans-serif;
-      font-size: 0.92rem;
-      margin-bottom: 0.2rem;
-    }
-    h2 {
-      font-family: Helvetica, Arial, sans-serif;
-      font-size: 0.8rem;
-      font-weight: 600;
-      letter-spacing: 0.1em;
-      text-transform: uppercase;
-      color: var(--ink);
-      margin: 2.5rem 0 0.75rem;
-    }
-    blockquote {
-      margin: 1.5rem 0 0;
-      padding-left: 1rem;
-      border-left: 2px solid #1F6B5C;
-      font-style: italic;
-      color: var(--ink);
-    }
-    blockquote cite {
-      display: block;
-      margin-top: 0.6rem;
-      font-family: Helvetica, Arial, sans-serif;
-      font-style: normal;
-      font-size: 0.8rem;
-      color: var(--muted);
-    }
-    .foot {
-      margin-top: 2.5rem;
-      padding-top: 1.25rem;
-      border-top: 1px solid var(--line);
-      font-family: Helvetica, Arial, sans-serif;
-      font-size: 0.85rem;
-      color: var(--muted);
-    }
-    .foot a { text-decoration: underline; }
-  </style>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#080a09">
+  <meta name="description" content="Something is taking shape. Revere Robotics is operating in stealth.">
+  <title>Revere Robotics — In stealth</title>
+  <link rel="icon" href="forall-logo-white.png" type="image/png">
+  <link rel="stylesheet" href="style.css">
+  <script src="script.js" defer></script>
 </head>
 <body>
-  <div class="hero-bg" aria-hidden="true"></div>
-  <main class="wrap">
-    <div>
-      <span class="mark" aria-hidden="true"></span>
-      <span class="wordmark">Revere Robotics</span>
+  <div class="ambient" aria-hidden="true"></div>
+  <div class="grid" aria-hidden="true"></div>
+  <header>
+    <a class="brand" href="./" aria-label="Revere Robotics home">REVERE<span>ROBOTICS</span></a>
+    <span class="status"><i aria-hidden="true"></i> OPERATING IN STEALTH</span>
+  </header>
+  <main>
+    <div class="artifact" aria-hidden="true">
+      <div class="orbit orbit-outer"></div>
+      <div class="orbit orbit-inner"></div>
+      <span class="coordinate coordinate-left">[ ∀ ]</span>
+      <span class="coordinate coordinate-right">UNREVEALED</span>
+      <div class="logo-field"><img class="logo" src="forall-logo-white.png" alt="" width="2048" height="2039"></div>
+      <div class="scan"></div>
     </div>
-
-    <h1>Robots in existing grocery stores.</h1>
-    <p>
-      We help retailers pack online grocery orders with human-supervised robots,
-      using the stores they already operate.
-    </p>
-
-    <ul>
-      <li>
-        <strong>Existing stores</strong>
-        Fulfillment stays in the store. No dark-store network required.
-      </li>
-      <li>
-        <strong>Human-supervised robots</strong>
-        People stay in the loop while robots do the walking and picking.
-      </li>
-      <li>
-        <strong>Online grocery</strong>
-        Built for the orders that already come through your digital channels.
-      </li>
-    </ul>
-
-    <h2>Why grocery</h2>
-    <p>
-      Online is where grocery growth is happening, and picking those orders by
-      hand is slow and labor-intensive. Most retailers face the same tradeoff:
-      serve digital demand, or protect store margins.
-    </p>
-
-    <blockquote>
-      “Manual store-based fulfilment tends to hit a ceiling at around 12-15%
-      online penetration.”
-      <cite>McKinsey &amp; Company, The State of Grocery North America 2026</cite>
-    </blockquote>
-
-    <div class="foot">
-      <p>© Revere Robotics</p>
-      <p><a href="mailto:hello@reverebots.com">hello@reverebots.com</a></p>
+    <p class="eyebrow">A QUIET BEGINNING. AN OPEN POSSIBILITY.</p>
+    <h1>Some things are better<br>built in silence<span class="period">.</span></h1>
+    <div class="transmission">
+      <span class="message-number" aria-hidden="true">01 / 04</span>
+      <p id="message">Something is taking shape.</p>
     </div>
+    <div class="controls">
+      <button id="next" type="button">NEXT TRANSMISSION <span aria-hidden="true">↗</span></button>
+      <button id="motion" type="button" aria-pressed="false" aria-label="Pause animation">Ⅱ</button>
+    </div>
+    <p class="sr-only" id="announcement" role="status"></p>
   </main>
+  <footer>
+    <span>© <span id="year">2026</span> REVERE ROBOTICS</span>
+    <span class="footer-note">LESS SAID. MORE POSSIBLE.</span>
+    <a href="mailto:hello@reverebots.com">MAKE CONTACT <span aria-hidden="true">↗</span></a>
+  </footer>
 </body>
 </html>
