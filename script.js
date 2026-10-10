@@ -1,8 +1,8 @@
 const messages = [
-  'Something is taking shape.',
-  'The next move happens quietly.',
-  'Not everything needs to be seen. Yet.',
-  'For now, a sign of things to come.',
+  'A new kind of operator is taking shape.',
+  'The everyday is the next frontier.',
+  'Repetition is ready for a different future.',
+  'Quietly building. For a world that never stops.',
 ];
 const message = document.querySelector('#message');
 const number = document.querySelector('.message-number');
