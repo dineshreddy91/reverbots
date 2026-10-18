@@ -3,71 +3,72 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <meta name="theme-color" content="#0b0b0b">
-  <meta name="description" content="General-purpose robotics for the physical economy. Explore retail fulfillment as one application of Revere Robotics.">
-  <title>Revere Robotics — Robotics for the physical world</title>
-  <link rel="icon" href="forall-logo-white.png" type="image/png">
+  <meta name="theme-color" content="#08090a">
+  <meta name="description" content="Revere is the private edge deployment layer for physical AI: one shared world model per facility, serving its cameras, robots, and people.">
+  <meta property="og:title" content="Revere">
+  <meta property="og:description" content="The private edge deployment layer for physical AI.">
+  <meta property="og:type" content="website">
+  <title>Revere — Private edge deployment for physical AI</title>
+  <link rel="icon" href="assets/mark.png" type="image/png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500&family=IBM+Plex+Mono:wght@400&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="style.css">
-  <script src="script.js" defer></script>
 </head>
 <body>
-  <div class="ambient" aria-hidden="true"></div>
-  <div class="grid" aria-hidden="true"></div>
-  <header>
-    <a class="brand" href="./" aria-label="Revere Robotics home">REVERE<span>ROBOTICS</span></a>
-    <span class="status"><i aria-hidden="true"></i> BUILT FOR THE REAL WORLD</span>
+  <header class="wrap">
+    <a class="brand" href="./" aria-label="Revere home">
+      <svg class="mark" viewBox="0 0 256 256" width="26" height="26" aria-hidden="true">
+        <g fill="none" stroke-linecap="round" stroke-linejoin="round">
+          <path d="M40 24 L128 222 L216 24" stroke="currentColor" stroke-width="34"/>
+          <path d="M40 24 L128 222 L216 24" stroke="var(--bg)" stroke-width="14"/>
+          <path d="M28 96 H228" stroke="currentColor" stroke-width="34"/>
+          <path d="M28 96 H228" stroke="var(--bg)" stroke-width="14"/>
+        </g>
+      </svg>
+      <span>Revere</span>
+    </a>
+    <button class="nav-link" type="button" data-contact>Contact us</button>
   </header>
+
   <main>
-    <section class="hero" aria-labelledby="headline">
-    <div class="hero-copy">
-    <p class="eyebrow">INTELLIGENCE, BEYOND THE SCREEN.</p>
-    <h1 id="headline">The world doesn’t<br>run on software<br><em>alone.</em></h1>
-    <p class="intro">Building general-purpose robotics for the businesses that keep the physical world moving.</p>
-    <div class="transmission">
-      <span class="message-number" aria-hidden="true">01 / 04</span>
-      <p id="message">Intelligence that gets to work.</p>
-    </div>
-    <a class="contact" href="mailto:hello@reverebots.com">START A CONVERSATION <span aria-hidden="true">↗</span></a>
-    <div class="controls">
-      <button id="next" type="button">NEXT PERSPECTIVE <span aria-hidden="true">↗</span></button>
-      <button id="motion" type="button" aria-pressed="false" aria-label="Pause animation">Ⅱ</button>
-    </div>
-    <p class="sr-only" id="announcement" role="status"></p>
-    </div>
-    <div class="artifact" aria-hidden="true">
-      <div class="dot-field"></div>
-      <div class="orbit orbit-outer"></div>
-      <div class="orbit orbit-inner"></div>
-      <span class="coordinate coordinate-left">[ ∀ ]</span>
-      <span class="coordinate coordinate-right">INTELLIGENCE / IN MOTION</span>
-      <div class="logo-field"><img class="logo" src="forall-logo-white.png" alt="" width="2048" height="2039"></div>
-      <div class="scan"></div>
-    </div>
+    <section class="hero wrap">
+      <p class="label">Physical AI / On-prem</p>
+      <h1>The private edge deployment layer for physical AI.</h1>
+      <p class="lede">Don’t put a GPU in every device. Put one in every facility. Revere trains and serves a single world model per building, shared by its cameras, robots, and people.</p>
     </section>
-    <section class="thesis" aria-label="Our direction">
-      <p class="thesis-label">THE WORK AHEAD</p>
-      <p>Beyond the digital.<br><span>Into the physical.</span></p>
-      <p>Less repetition.<br><span>More possibility.</span></p>
-      <p>General-purpose robotics.<br><span>For everyday work.</span></p>
-    </section>
-    <section class="application" aria-labelledby="application-title">
-      <div class="application-heading">
-        <p class="eyebrow">APPLICATION / 01</p>
-        <h2 id="application-title">Retail fulfillment.<br><em>In the stores we already have.</em></h2>
-        <p class="application-intro">One application of a broader vision: helping retailers fulfill online grocery orders with human-supervised robots, inside their existing stores.</p>
-        <a class="application-link" href="mailto:hello@reverebots.com?subject=Retail%20fulfillment">LET’S TALK RETAIL <span aria-hidden="true">↗</span></a>
+
+    <section class="wrap section">
+      <div class="section-head">
+        <p class="label">Platform</p>
+        <h2>A shared backbone for the whole building.</h2>
       </div>
-      <dl class="application-details">
-        <div><dt><span>01</span> Existing stores</dt><dd>Bring automation to the aisles and operations already in place.</dd></div>
-        <div><dt><span>02</span> People in the loop</dt><dd>Human supervision stays central to the work, with robots helping with walking and picking.</dd></div>
-        <div><dt><span>03</span> Online orders, physical work</dt><dd>Focus on the repetitive work behind picking and packing digital grocery orders.</dd></div>
+      <dl class="points">
+        <div>
+          <dt>Shared inference</dt>
+          <dd>Large models hot-served on site, beyond the limits of onboard robot compute.</dd>
+        </div>
+        <div>
+          <dt>Private by default</dt>
+          <dd>Video and sensor data stay inside the facility. Nothing needs to reach the cloud.</dd>
+        </div>
+        <div>
+          <dt>Improves with use</dt>
+          <dd>Real tasks and human corrections become training signal for the next deployment.</dd>
+        </div>
       </dl>
     </section>
+
+    <section class="wrap section cta">
+      <p>Shared world model. Shared intelligence. <span>Shared work.</span></p>
+      <button type="button" data-contact>Contact us</button>
+    </section>
   </main>
-  <footer>
-    <span>© <span id="year">2026</span> REVERE ROBOTICS</span>
-    <span class="footer-note">INTELLIGENCE IN THE PHYSICAL WORLD.</span>
-    <a href="mailto:hello@reverebots.com">MAKE CONTACT <span aria-hidden="true">↗</span></a>
+
+  <footer class="wrap">
+    <span>© <span id="year">2026</span> Revere</span>
+    <span>Physical AI, deployed on-prem</span>
   </footer>
+  <script src="script.js" defer></script>
 </body>
 </html>
